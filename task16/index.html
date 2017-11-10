@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>EFE-Task-HTML&CSS编码练习-重新编码</title>
+    <meta http-equiv=="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width:device-width,initial-scale=1.0">
+    <link rel="shortcut icon" href="./static/img/favicon.ico">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<header>
+    <img class="logo" src="./static/img/logo.png" alt="logo">
+    <nav>
+        <span class="nav-item"><span>HOME</span></span>
+        <span class="nav-item">
+            <span>PRODUCT</span>
+            <img class="arrow" src="./static/img/arrow.png" alt="arrow-down">
+        </span>
+        <span class="nav-item">
+            <span>SUPPORT</span>
+            <img class="arrow" src="./static/img/arrow.png" alt="arrow-down">
+        </span>
+        <span class="nav-item">
+            <span>ABOUT</span>
+            <img class="arrow" src="./static/img/arrow.png" alt="arrow-down">
+        </span>
+    </nav>
+</header>
+
+<div class="banner">
+    <div class="banner-left">
+        <div class="banner-text">
+            <p class="bt-top">HELLO<br>WORLD</p>
+            <p class="bt-bottom">PRODUCT</p>
+        </div>
+    </div>
+    <div class="banner-right"></div>
+</div>
+
+<div class="content">
+    <div class="card-container">
+        <div class="card-item">
+            <img class="card-img" src="./static/img/level2-01.png" alt="card-img">
+            <span class="main-title">One</span><br>
+            <span class="vice-title">Level2 Title</span>
+            <p class="card-content">Some text some text some text some text some text some text some text</p>
+        </div>
+        <div class="card-item">
+            <img class="card-img" src="./static/img/level2-02.png" alt="card-img">
+            <span class="main-title">Two</span><br>
+            <span class="vice-title">Level2 Title</span>
+            <p class="card-content">Some text some text some text some text some text some text some text</p>
+        </div>
+        <div class="card-item">
+            <img class="card-img" src="./static/img/level2-03.png" alt="card-img">
+            <span class="main-title">Three</span><br>
+            <span class="vice-title">Level2 Title</span>
+            <p class="card-content">Some text some text some text some text some text some text some text</p>
+        </div>
+    </div>
+
+    <div class="swiper-container">
+        <div class="swiper-content">
+            <span class="swiper-item">
+                <img class="swiper-img" src="./static/img/swipe-1.png" alt="swiper-img">
+                <span class="swiper-text">TEXT ONE</span>
+            </span>
+            <span class="swiper-item">
+                <img class="swiper-img" src="./static/img/swipe-2.png" alt="swiper-img">
+                <span class="swiper-text">TEXT TWO</span>
+            </span>
+            <span class="swiper-item">
+                <img class="swiper-img" src="./static/img/swipe-3.png" alt="swiper-img">
+                <span class="swiper-text">TEXT THREE</span>
+            </span>
+            <span class="swiper-item">
+                <img class="swiper-img" src="./static/img/swipe-1.png" alt="swiper-img">
+                <span class="swiper-text">TEXT ONE</span>
+            </span>
+        </div>
+        <div class="swiper-index">
+            <span class="index-item sw-index-1"></span>
+            <span class="index-item sw-index-2"></span>
+            <span class="index-item sw-index-3"></span>
+        </div>
+    </div>
+    <div class="tab-container">
+        <span class="tab-item">TABONE</span>
+        <span class="tab-item">TABTOW</span>
+        <span class="tab-item">TABTHR</span>
+        <span class="tab-item">TABFOR</span>
+    </div>
+
+    <div class="table-container">
+        <div class="table-caption">Table Caption</div>
+        <div class="table-header">
+            <span class="cell"></span>
+            <span class="cell">Free Vision</span>
+            <span class="cell">Personal Vision</span>
+            <span class="cell">Company Vision</span>
+        </div>
+        <div class="table-content">
+            <span class="cell head">Feature A</span>
+            <span class="cell">Some text Some text Some text</span>
+            <span class="cell">Some text Some text Some text</span>
+            <span class="cell">Some text Some text Some text</span>
+        </div>
+        <div class="table-content">
+            <span class="cell head">Feature B</span>
+            <span class="cell">Some text Some text Some text</span>
+            <span class="cell">Some text Some text Some text</span>
+            <span class="cell">Some text Some text Some text</span>
+        </div>
+        <div class="table-content">
+            <span class="cell head">Feature C</span>
+            <span class="cell">Some text Some text Some text</span>
+            <span class="cell">Some text Some text Some text</span>
+            <span class="cell">Some text Some text Some text</span>
+        </div>
+        <div class="table-content">
+            <span class="cell head">Feature D</span>
+            <span class="cell">Some text Some text Some text</span>
+            <span class="cell">Some text Some text Some text</span>
+            <span class="cell">Some text Some text Some text</span>
+        </div>
+        <div class="table-footer">
+            <span class="cell head">Price</span>
+            <span class="cell free">Free</span>
+            <span class="cell personal">$9.99/<sup>mo</sup></span>
+            <span class="cell company">$99.9/<sup>mo</sup></span>
+        </div>
+    </div>
+
+    <form action="">
+
+        <select name="country" id="country">
+            <option selected disabled>select your country</option>
+            <option value="cn">中国</option>
+            <option value="us">美国</option>
+            <option value="uk">英国</option>
+        </select>
+        <select name="country" id="city">
+            <option selected disabled>select your city</option>
+            <option value="PK">北京</option>
+            <option value="LA">洛杉矶</option>
+            <option value="HK">香港</option>
+        </select>
+        <input class="email-input" type="text" placeholder="input your email address">
+        <input class="btn-submit" type="submit" value="Submit">
+    </form>
+
+    <footer>&copy; 2017 EFE</footer>
+
+</div>
+
+</body>
+</html>
