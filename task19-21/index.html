@@ -12,22 +12,32 @@
 <header>
     <img class="logo" src="./static/img/logo.png" alt="logo">
 
-    <!-- TODO(Spades): replace spans with ul>li -->
-    <nav>
-        <span class="nav-item"><span>HOME</span></span>
-        <span class="nav-item">
-            <span>PRODUCT</span>
-            <img class="arrow" src="./static/img/arrow.png" alt="arrow-down">
-        </span>
-        <span class="nav-item">
-            <span>SUPPORT</span>
-            <img class="arrow" src="./static/img/arrow.png" alt="arrow-down">
-        </span>
-        <span class="nav-item">
-            <span>ABOUT</span>
-            <img class="arrow" src="./static/img/arrow.png" alt="arrow-down">
-        </span>
-    </nav>
+    <ul class="nav">
+        <li class="nav-item">
+            <span>HOME</span>
+        </li>
+        <li class="nav-item">
+            <span class="main-index">PRODUCT</span>
+            <ul class="sub-nav">
+                <li>My Product</li>
+                <li>Your Product</li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <span class="main-index">SUPPORT</span>
+            <ul class="sub-nav">
+                <li>Support Me</li>
+                <li>Support you</li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <span class="main-index">ABOUT</span>
+            <ul class="sub-nav">
+                <li>About Me</li>
+                <li>About You</li>
+            </ul>
+        </li>
+    </ul>
 </header>
 
 <div class="banner">
@@ -64,19 +74,19 @@
 
     <div class="swiper-container">
         <div class="swiper-content">
-            <span class="swiper-item">
+            <span class="swiper-item sw-item-1">
                 <img class="swiper-img" src="./static/img/swipe-1.png" alt="swiper-img">
                 <span class="swiper-text">TEXT ONE</span>
             </span>
-            <span class="swiper-item">
+            <span class="swiper-item sw-item-2">
                 <img class="swiper-img" src="./static/img/swipe-2.png" alt="swiper-img">
                 <span class="swiper-text">TEXT TWO</span>
             </span>
-            <span class="swiper-item">
+            <span class="swiper-item sw-item-3">
                 <img class="swiper-img" src="./static/img/swipe-3.png" alt="swiper-img">
                 <span class="swiper-text">TEXT THREE</span>
             </span>
-            <span class="swiper-item">
+            <span class="swiper-item sw-item-4">
                 <img class="swiper-img" src="./static/img/swipe-1.png" alt="swiper-img">
                 <span class="swiper-text">TEXT ONE</span>
             </span>
@@ -88,10 +98,52 @@
         </div>
     </div>
     <div class="tab-container">
-        <span class="tab-item">TABONE</span>
-        <span class="tab-item">TABTOW</span>
-        <span class="tab-item">TABTHR</span>
-        <span class="tab-item">TABFOR</span>
+        <span class="tab-item" data-index="0">TABONE</span>
+        <span class="tab-item active" data-index="1">TABTOW</span>
+        <span class="tab-item" data-index="2">TABTHR</span>
+        <span class="tab-item" data-index="3">TABFOR</span>
+        <div class="tab-content">
+            <div class="tc-item">
+                八卦是会过去的
+                新闻是一时的
+                生活是永久的
+                音乐是会留下来的
+                我帮他们写了歌
+                因为我没写过保育动物之类的歌
+                我始终还是我
+                谁都改变不了我
+                虽然我知道很多弓箭手
+            </div>
+            <div class="tc-item active">
+                我在阴暗中降落
+                世界在雨中淹没
+                画面与现实交错
+                无法抽离卡在胸口
+                躯壳如行尸走肉
+                陷阱旋涡我已受够
+                挣脱逃离这个空洞
+                如果我冲出黑幕笼罩的天空
+            </div>
+            <div class="tc-item">
+                狂风之中 嘶吼
+                作困兽之斗
+                我奋力冲破
+                封闭的思绪震开裂缝
+                燃烧的花朵 升空
+                消失在空中
+                记忆在剥落
+            </div>
+            <div class="tc-item">
+                想要有直升机
+                想要和你飞到宇宙去
+                想要和你融化在一起
+                融化在银河里
+                我每天每天每天
+                在想想想想着你
+                这样的甜蜜
+                让我开始相信命运
+            </div>
+        </div>
     </div>
 
     <div class="table-container">
@@ -134,25 +186,54 @@
         </div>
     </div>
 
-    <form action="">
+    <form action="" id="form">
+        <div class="select-input country" id="country">
+            <div class="select-hint" id="country-input" data-value="">select you country</div>
+            <div class="options">
+                <div class="op-item" data-index="1">中国</div>
+                <div class="op-item" data-index="2">美国</div>
+                <div class="op-item" data-index="3">英国</div>
+            </div>
 
-        <select name="country" id="country">
-            <option selected disabled>select your country</option>
-            <option value="cn">中国</option>
-            <option value="us">美国</option>
-            <option value="uk">英国</option>
-        </select>
-        <select name="country" id="city">
-            <option selected disabled>select your city</option>
-            <option value="PK">北京</option>
-            <option value="LA">洛杉矶</option>
-            <option value="HK">香港</option>
-        </select>
+        </div>
+        <div class="select-input city" id="city">
+            <div class="select-hint" data-value="">select you city</div>
+            <div class="options">
+                <div class="op-item">北京</div>
+                <div class="op-item">上海</div>
+                <div class="op-item">广州</div>
+            </div>
+            <div class="options">
+                <div class="op-item">洛杉矶</div>
+                <div class="op-item">纽约</div>
+                <div class="op-item">旧金山</div>
+            </div>
+            <div class="options">
+                <div class="op-item">伦敦</div>
+                <div class="op-item">利物浦</div>
+                <div class="op-item">曼彻斯特</div>
+            </div>
+
+        </div>
+        <!--<select name="country" id="country">-->
+        <!--<option selected disabled>select your country</option>-->
+        <!--<option value="cn">中国</option>-->
+        <!--<option value="us">美国</option>-->
+        <!--<option value="uk">英国</option>-->
+        <!--</select>-->
+        <!--<select name="country" id="city">-->
+        <!--<option selected disabled>select your city</option>-->
+        <!--<option value="PK">北京</option>-->
+        <!--<option value="LA">洛杉矶</option>-->
+        <!--<option value="HK">香港</option>-->
+        <!--</select>-->
         <input class="email-input" type="text" placeholder="input your email address">
         <input class="btn-submit" type="submit" value="Submit">
     </form>
 
     <footer>&copy; 2017 EFE</footer>
+
+    <script src="./index.js"></script>
 
 </div>
 

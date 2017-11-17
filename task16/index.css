@@ -352,15 +352,15 @@ header {
     font-size: 18px;
 }
 
-.table-footer .free {
+.free {
     color: #008000;
 }
 
-.table-footer .personal {
+.personal {
     color: #2f6ebf;
 }
 
-.table-footer .company {
+.company {
     color: #d60000;
 }
 
@@ -372,7 +372,8 @@ form {
     background: url(./static/img/form-background-right.png) no-repeat right, url(./static/img/form-background-left.png) no-repeat left;
 }
 
-select, .email-input {
+select,
+.email-input {
     width: 225px;
     height: 35px;
     padding-left: 20px;
@@ -408,7 +409,7 @@ select {
 footer {
     margin-top: 60px;
     text-align: center;
-    font-size:14px;
+    font-size: 14px;
 }
 
 
