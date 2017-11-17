@@ -9,7 +9,6 @@ function mouseEnterHandler(event) {
     let target = event.target
     target.firstElementChild.style.cssText = "background-color:#6e6e6e;"
     target.lastElementChild.style.cssText = "display:block;"
-    console.log(event)
 
 }
 
@@ -55,7 +54,7 @@ document.getElementById('form').addEventListener('click', (event) => {
     }
     let activeOption = document.getElementsByClassName('options active')
     if (activeOption.length > 0) {
-        if(event.target.className!=='op-item'){
+        if (event.target.className !== 'op-item' && event.target.className !== 'select-hint') {
             activeOption[0].className = 'options'
         }
     }
@@ -80,7 +79,8 @@ document.getElementById('form').addEventListener('click', (event) => {
     }
     if (event.target.className === 'op-item') {
         parentNode.parentNode.children[0].innerText = event.target.innerText
-        countryInputEle.dataset['value'] = event.target.innerText
+        if (name2index[event.target.innerText])
+            countryInputEle.dataset['value'] = event.target.innerText
         parentNode.className = 'options'
         countryInputEle.className = 'select-hint'
     }
