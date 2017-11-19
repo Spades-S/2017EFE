@@ -53,8 +53,9 @@ document.getElementById('form').addEventListener('click', (event) => {
         '英国': 3
     }
     let activeOption = document.getElementsByClassName('options active')
-    if (activeOption.length > 0) {
-        if (event.target.className !== 'op-item' && event.target.className !== 'select-hint') {
+    if (activeOption.length) {
+        if (event.target.className !== 'op-item'
+            && event.target.className !== 'select-hint') {
             activeOption[0].className = 'options'
         }
     }
