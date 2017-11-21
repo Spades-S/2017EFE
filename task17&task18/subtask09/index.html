@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>IFE-2016-task18</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #tag-display {
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        #btn-interest {
+            margin-bottom: 20px;
+        }
+
+        .item {
+            display: inline-block;
+            margin-left: 5px;
+            margin-right: 5px;
+            padding: 10px;
+            background: #8cc8fe;
+            color: #fff;
+        }
+
+        #tag-display .item {
+            background: #8cc8fe;
+        }
+
+        #interest-display .item {
+            background: #fecb82;
+        }
+
+        .del {
+            display: none;
+        }
+
+        .active .del {
+            display: inline-block;
+            background: #ff0000;
+        }
+
+
+    </style>
+</head>
+<body>
+<div>
+    <span>Tag:</span>
+    <input type="text" id="tag-input">
+</div>
+<div id="tag-display"></div>
+<div>
+    <textarea id="interest-input" cols="30" rows="10"></textarea><br>
+    <button id="btn-interest">确认兴趣爱好</button>
+</div>
+<div id="interest-display"></div>
+<script src="./index.js"></script>
+</body>
+
+</html>
+
