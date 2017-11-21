@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>IFE-2016-task18</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+        .display-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin-top:30px;
+        }
+
+        #left-out {
+            margin-left: 20px;
+        }
+
+        .item {
+            margin-left: 10px;
+            padding:15px;
+            text-align: center;
+            vertical-align: text-bottom;
+            background-color: #b5b5b5;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="input-wrapper">
+    <textarea  id="user-input" cols="30" rows="10"></textarea>
+    <button id="left-in">左侧入</button>
+    <button id="right-in">右侧入</button>
+    <button id="left-out">左侧出</button>
+    <button id="right-out">右侧出</button>
+    <input type="text" id="search-input">
+    <button id="search">搜索</button>
+</div>
+
+<div class="display-wrapper">
+</div>
+
+
+<script src="./index.js"></script>
+</body>
+
+</html>
