@@ -22,33 +22,16 @@ tagInputEle.addEventListener('keypress', (e) => {
         tagInputEle.value = ''
     }
 })
-let activeItem = null
-tagDisplayEle.addEventListener('mouseover', (e) => {
-    let dclassName = e.target.className
-    if (dclassName.includes('item')) {
-        e.target.className = 'item active'
-        activeItem = e.target
-    } else {
-        if (e.target.className !== 'del') {
-            if (activeItem) {
-                activeItem.className = 'item'
-            }
-        }
-    }
-})
+
 tagDisplayEle.addEventListener('click', (e) => {
-    let removeEle = null
-    if (e.target.className === 'item active') {
-        removeEle = e.target
-
+    let removeEle = e.target
+    if (removeEle.className === 'item') {
+        let index = tagArr.indexOf(removeEle.innerText.substr(2))
+        tagArr.splice(index, 1)
+        removeEle.remove()
     }
-    if (e.target.parentNode.className === 'item active') {
-        removeEle = e.target.parentNode
 
-    }
-    let index = tagArr.indexOf(removeEle.innerText.substr(2))
-    tagArr.splice(index, 1)
-    removeEle.remove()
+
 })
 
 document.getElementById('btn-interest').addEventListener('click', () => {
@@ -71,7 +54,7 @@ document.getElementById('btn-interest').addEventListener('click', () => {
 function render(arr, ele) {
     let innerHTML = ''
     arr.forEach((value) => {
-        innerHTML += `<span class="item"><span class="del">删除</span>${value}</span>`
+        innerHTML += `<span class="item">${value}</span>`
     })
     ele.innerHTML = innerHTML
 }
