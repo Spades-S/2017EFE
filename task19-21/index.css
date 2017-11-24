@@ -74,16 +74,14 @@ header {
     text-align: right;
 }
 
-/* FIXME 用css实现时，将一下注释部分取消注释 */
 
-/*.nav-item:hover .main-index{*/
-/*background-color: #6e6e6e;*/
-/*}*/
-/*.nav-item:hover .sub-nav{*/
-/*display: block;*/
-/*}*/
+.nav-item:hover .main-index{
+background-color: #6e6e6e;
+}
+.nav-item:hover .sub-nav{
+display: block;
+}
 
-/* FIXME end */
 
 .nav-item {
     margin-right: 45px;
