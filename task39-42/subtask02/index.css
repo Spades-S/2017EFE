@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 0 1.5rem;
+    line-height: 3rem;
+    font-size: 16px;
+    background: #000;
+    color: #fff;
+}
+
+nav {
+    float: right;
+}
+
+nav span {
+    margin-right: 0.8rem;
+}
+
+nav span:last-child {
+    margin-right: 0;
+}
+
+.banner {
+    display: block;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.post {
+    padding-right: 0;
+    padding-left: 0;
+    height: 8rem;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+.post .item {
+    margin-right: 1rem;
+    padding: 0;
+    height: 7rem;
+    background: url(../static/img/item.png) left 30% no-repeat;
+}
+
+.post .item:last-child {
+    margin-right: 0;
+}
+
+.intro {
+    position: absolute;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    margin-top: 3.5rem;
+    padding: 0.5rem 1rem;
+    height: 3.5rem;
+    background: rgba(75, 74, 74, 0.6);
+    color: #fff;
+}
+
+.intro .main {
+    font-size: 18px;
+}
+
+.intro .vice {
+    font-size: 15px;
+}
+
+.col-sm-4 {
+    padding: 0 !important;
+}
+
+.sweep {
+    margin-left: 1rem;
+    height: 5rem;
+    background: url(../static/img/banner.png) left 30% top 60% no-repeat;
+}
+
+.sp-title {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    color: #fff;
+}
+
+.sp-title .main {
+    font-size: 18px;
+}
+
+.sp-title .vice {
+    font-size: 14px;
+}
+
+.img-text .item {
+    overflow: auto;
+    margin-top: 1.5rem;
+}
+
+.img-text .img {
+    float: left;
+    width: 45%;
+    height: 9rem;
+    background: url(../static/img/item.png) right no-repeat;
+}
+
+.img-text .text {
+    padding-left: 50%;
+}
+
+.text .main {
+    font-size: 18px;
+}
+
+.text .vice {
+    font-size: 14px;
+}
+
+.text-only {
+    position: relative;
+    top: -2rem;
+    margin-left: 1rem;
+}
+
+.text-only .item {
+    margin-left: 0.7rem;
+    height: 2.7rem;
+
+}
+
+.text-only .main {
+    overflow: hidden;
+    height: 1.3rem;
+    font-size: 18px;
+}
+
+.text-only .vice {
+    font-size: 14px;
+}
+
+footer {
+    margin-top: 1rem;
+    height: 3rem;
+    font-size: 14px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+}
+
+@media screen and (max-width: 576px) {
+    .sweep,
+    .text-only {
+        margin-left: 0;
+    }
+
+    .text-only {
+        top: 0rem;
+        margin-top: 1rem;
+    }
+
+    nav {
+        display: flex !important;
+        justify-content: space-around;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        margin-top: 1rem;
+        height: 3rem;
+        background: #000;
+    }
+
+    .img-text .img {
+        float: right;
+    }
+
+    .img-text .text {
+        padding-right: 50%;
+        padding-left: 0;
+    }
+}
