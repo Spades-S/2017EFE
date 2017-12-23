@@ -63,8 +63,10 @@ nav {
 $intro-mask-color: #4b4a4a;
 $intro-text-color: #fff;
 @mixin intro {
+  overflow: hidden;
   position: absolute;
   padding-left: 1rem;
+  padding-right: 1rem;
   width: 100%;
   background: rgba($intro-mask-color, 0.6);
   color: $intro-text-color;
@@ -79,15 +81,18 @@ $intro-text-color: #fff;
   @include intro();
   padding-top: 0.5rem;
   bottom: 1.5rem;
+  height: 2rem;
   font-size: 18px;
+  line-height: 2rem;
 }
 
 .vice-intro {
   @include intro();
   bottom: 0;
   padding-bottom: 0.5rem;
+  height: 1.5rem;
   font-size: 15px;
-  line-height: 1rem;
+  line-height: 1.5rem;
 }
 
 .sweep {
@@ -109,7 +114,7 @@ $intro-text-color: #fff;
 
 .text-only {
   grid-area: text-only;
-  margin-top:0.7rem;
+  margin-top: 0.7rem;
   .item {
     height: 2.3rem;
   }
@@ -137,50 +142,50 @@ $intro-text-color: #fff;
     height: 9rem;
     background: url(../static/img/item.png) right no-repeat;
   }
-  .text{
-    padding-left:50%;
+  .text {
+    padding-left: 50%;
   }
-  .main-title{
-    font-size:18px;
+  .main-title {
+    font-size: 18px;
   }
-  .vice-title{
-    font-size:15px;
+  .vice-title {
+    font-size: 15px;
   }
 
 }
 
-footer{
-  margin-top:1.5rem;
-  height:3rem;
+footer {
+  margin-top: 1.5rem;
+  height: 3rem;
   text-align: center;
   background: grey;
 }
 
-@media screen and (max-width:760px){
-  .logo{
+@media screen and (max-width: 760px) {
+  .logo {
     display: block;
-    width:100%;
+    width: 100%;
     text-align: center;
   }
-  nav{
+  nav {
     display: flex;
     position: fixed;
-    bottom:0;
-    left:0;
-    right:0;
-    height:3rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3rem;
     background: #a5a5a5;
     color: #000;
     justify-content: space-around;
   }
-  .content{
+  .content {
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "card" "sweep" "img-text" "text-only";
   }
   .img-text {
     .img {
-      float: right ;
+      float: right;
     }
     .text {
       padding-right: 50%;

@@ -50,25 +50,32 @@ nav {
       margin-left: 0; }
 
 .main-intro {
+  overflow: hidden;
   position: absolute;
   padding-left: 1rem;
+  padding-right: 1rem;
   width: 100%;
   background: rgba(75, 74, 74, 0.6);
   color: #fff;
   padding-top: 0.5rem;
   bottom: 1.5rem;
-  font-size: 18px; }
+  height: 2rem;
+  font-size: 18px;
+  line-height: 2rem; }
 
 .vice-intro {
+  overflow: hidden;
   position: absolute;
   padding-left: 1rem;
+  padding-right: 1rem;
   width: 100%;
   background: rgba(75, 74, 74, 0.6);
   color: #fff;
   bottom: 0;
   padding-bottom: 0.5rem;
+  height: 1.5rem;
   font-size: 15px;
-  line-height: 1rem; }
+  line-height: 1.5rem; }
 
 .sweep {
   margin-bottom: 0.7rem;
