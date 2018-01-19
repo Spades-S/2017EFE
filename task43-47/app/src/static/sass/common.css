@@ -1,0 +1,50 @@
+body {
+  margin: 0; }
+
+header {
+  height: 2rem;
+  background: #d2d2d2; }
+  header .btn {
+    float: right;
+    margin-top: 0.3rem;
+    border: none;
+    border: 1px solid #b9b9b9;
+    width: 3rem;
+    height: 1.4rem;
+    font-size: 0.7rem;
+    outline: none; }
+  header .finish,
+  header .add {
+    margin-right: 0.3rem; }
+  header .cancel {
+    float: left;
+    margin-left: 0.3rem; }
+  header .title {
+    padding-left: 3.3rem;
+    padding-right: 3.3rem;
+    line-height: 2rem;
+    text-align: center; }
+  header .disappear {
+    display: none; }
+
+main {
+  padding-left: 0.3rem;
+  padding-right: 0.3rem; }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #d2d2d2;
+  font-size: 0; }
+  footer span {
+    display: inline-block;
+    width: 50%;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    text-align: center; }
+  footer .active {
+    font-weight: 700; }
+
+/*# sourceMappingURL=common.css.map */

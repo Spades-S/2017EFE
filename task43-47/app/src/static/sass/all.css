@@ -1,0 +1,137 @@
+.priority,
+.status {
+  display: flex;
+  border-bottom: 1px solid #acacac;
+  margin: 0 -0.3rem;
+  padding-left: 0.5rem; }
+  .priority .item,
+  .status .item {
+    position: relative;
+    width: 33%; }
+    .priority .item .hint,
+    .status .item .hint {
+      margin-left: 1.2rem;
+      line-height: 2rem; }
+
+.priority {
+  background: #efdade; }
+
+.status {
+  background: #dff1df; }
+
+.circle,
+.doing,
+.todo,
+.done {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.doing {
+  width: 0;
+  height: 0;
+  border-left: 1rem solid #acacac;
+  border-top: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid transparent; }
+
+.todo {
+  height: 1rem;
+  width: 0;
+  border-left: 0.3333333333rem solid #acacac;
+  border-right: 0.3333333333rem solid #acacac;
+  padding-left: 0.3333333333rem; }
+
+.done {
+  height: 1rem;
+  width: 1rem;
+  background: #acacac; }
+
+.list .item {
+  position: relative;
+  margin: 0.3rem 0;
+  padding: 0 0.3rem;
+  border: 1px solid #acacac; }
+  .list .item .content {
+    margin: 0 -0.3rem;
+    padding-left: 1.8rem;
+    padding-right: 0.3rem;
+    line-height: 1.8rem;
+    word-break: break-word;
+    opacity: 0.99;
+    z-index: 1000; }
+
+.high .circle {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 0.5rem;
+  background: #cc2020; }
+.high .done {
+  height: 1rem;
+  width: 1rem;
+  background: #cc2020; }
+.high .todo {
+  height: 1rem;
+  width: 0;
+  border-left: 0.3333333333rem solid #cc2020;
+  border-right: 0.3333333333rem solid #cc2020;
+  padding-left: 0.3333333333rem; }
+
+.medium .circle {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 0.5rem;
+  background: #caca1a; }
+.medium .done {
+  height: 1rem;
+  width: 1rem;
+  background: #caca1a; }
+.medium .todo {
+  height: 1rem;
+  width: 0;
+  border-left: 0.3333333333rem solid #caca1a;
+  border-right: 0.3333333333rem solid #caca1a;
+  padding-left: 0.3333333333rem; }
+
+.low .circle {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 0.5rem;
+  background: #148614; }
+.low .done {
+  height: 1rem;
+  width: 1rem;
+  background: #148614; }
+.low .todo {
+  height: 1rem;
+  width: 0;
+  border-left: 0.3333333333rem solid #148614;
+  border-right: 0.3333333333rem solid #148614;
+  padding-left: 0.3333333333rem; }
+
+.status-choice,
+.edit-choice {
+  overflow: hidden;
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  background: #acacac;
+  transition: width 0.5s ease; }
+  .status-choice input,
+  .edit-choice input {
+    padding: 0;
+    width: 3rem;
+    font-size: 0.7rem; }
+
+.status-choice {
+  left: 0; }
+  .status-choice.active {
+    width: 9rem; }
+
+.edit-choice {
+  right: 0; }
+  .edit-choice.active {
+    width: 6rem; }
+
+/*# sourceMappingURL=all.css.map */

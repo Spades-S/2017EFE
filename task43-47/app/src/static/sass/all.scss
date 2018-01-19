@@ -1,0 +1,146 @@
+@import 'logo.scss';
+
+$defaultColor: #acacac;
+$highLevelColor: #cc2020;
+$mediumLevelColor: #caca1a;
+$lowLevelColor: #148614;
+
+.priority,
+.status {
+  display: flex;
+  border-bottom: 1px solid $defaultColor;
+  margin: 0 -0.3rem;
+
+  padding-left: 0.5rem;
+  .item {
+    position: relative;
+    width: 33%;
+    .hint {
+      margin-left: 1.2rem;
+      line-height: 2rem;
+    }
+  }
+}
+
+.priority {
+  background: #efdade;
+}
+
+.status {
+  background: #dff1df;
+}
+
+.circle,
+.doing,
+.todo,
+.done {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+.doing {
+  @include triangle(1rem, $defaultColor);
+}
+
+.todo {
+  @include bar(1rem, $defaultColor);
+}
+
+.done {
+  @include square(1rem, $defaultColor);
+}
+
+.list {
+  .item {
+    position: relative;
+    margin: 0.3rem 0;
+    padding: 0 0.3rem;
+    border: 1px solid $defaultColor;
+    .content {
+      margin: 0 -0.3rem;
+      padding-left: 1.8rem;
+      padding-right: 0.3rem;
+      line-height: 1.8rem;
+      word-break: break-word;
+      opacity: 0.99;
+      z-index: 1000;
+    }
+
+  }
+}
+
+.high {
+  .circle {
+    @include circle(1rem, $highLevelColor);
+  }
+  .done {
+    @include square(1rem, $highLevelColor);
+  }
+  .todo {
+    @include bar(1rem, $highLevelColor);
+  }
+
+}
+
+.medium {
+  .circle {
+    @include circle(1rem, $mediumLevelColor);
+  }
+  .done {
+    @include square(1rem, $mediumLevelColor);
+  }
+  .todo {
+    @include bar(1rem, $mediumLevelColor);
+  }
+
+}
+
+.low {
+  .circle {
+    @include circle(1rem, $lowLevelColor);
+  }
+  .done {
+    @include square(1rem, $lowLevelColor);
+  }
+  .todo {
+    @include bar(1rem, $lowLevelColor);
+  }
+
+}
+
+.status-choice,
+.edit-choice {
+  overflow: hidden;
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  background: $defaultColor;
+  transition: width 0.5s ease;
+  input {
+    padding: 0;
+    width: 3rem;
+    font-size: 0.7rem;
+  }
+
+}
+
+.status-choice {
+  left: 0;
+  &.active {
+    width: 9rem;
+  }
+}
+
+.edit-choice {
+  right: 0;
+  &.active {
+    width: 6rem;
+  }
+}
+
+
+

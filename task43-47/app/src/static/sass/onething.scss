@@ -1,0 +1,45 @@
+@import 'logo.scss';
+
+$borderColor: #b6b6b6;
+$highLevelColor: #cc2020;
+$mediumLevelColor: #caca1a;
+$lowLevelColor: #148614;
+.ot-tip {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+}
+
+.ot-content {
+  position: relative;
+  margin: 0.3rem 0;
+  padding-left: 0.3rem;
+  border: 1px solid $borderColor;
+  .logo {
+    position: absolute;
+    left: 0.3rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .text {
+    margin-left: 1.7rem;
+    margin-right: 0.3rem;
+    line-height: 1.8rem;
+  }
+
+}
+
+.high .doing {
+  @include triangle(1rem, $highLevelColor);
+}
+
+.medium .doing {
+  @include triangle(1rem, $mediumLevelColor);
+}
+
+.low .doing {
+  @include triangle(1rem, $lowLevelColor);
+}
+
+
+

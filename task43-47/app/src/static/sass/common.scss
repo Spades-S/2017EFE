@@ -1,0 +1,63 @@
+$defaultColor: #d2d2d2;
+$btnBorderColor: #b9b9b9;
+body {
+  margin: 0;
+}
+
+header {
+  height: 2rem;
+  background: $defaultColor;
+  .btn {
+    float: right;
+    margin-top: 0.3rem;
+    border: none;
+    border: 1px solid $btnBorderColor;
+    width: 3rem;
+    height: 1.4rem;
+    font-size: 0.7rem;
+    outline: none;
+  }
+  .finish,
+  .add {
+    margin-right: 0.3rem;
+  }
+  .cancel {
+    float: left;
+    margin-left: 0.3rem;
+  }
+  .title {
+    padding-left: 3.3rem;
+    padding-right: 3.3rem;
+    line-height: 2rem;
+    text-align: center;
+  }
+  .disappear {
+    display: none;
+  }
+
+}
+
+main {
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: $defaultColor;
+  font-size: 0;
+  span {
+    display: inline-block;
+    width: 50%;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    text-align: center;
+  }
+  .active {
+    font-weight: 700;
+  }
+
+}

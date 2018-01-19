@@ -1,0 +1,41 @@
+.ot-tip {
+  margin: 0.3rem 0;
+  font-size: 1rem; }
+
+.ot-content {
+  position: relative;
+  margin: 0.3rem 0;
+  padding-left: 0.3rem;
+  border: 1px solid #b6b6b6; }
+  .ot-content .logo {
+    position: absolute;
+    left: 0.3rem;
+    top: 50%;
+    transform: translateY(-50%); }
+  .ot-content .text {
+    margin-left: 1.7rem;
+    margin-right: 0.3rem;
+    line-height: 1.8rem; }
+
+.high .doing {
+  width: 0;
+  height: 0;
+  border-left: 1rem solid #cc2020;
+  border-top: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid transparent; }
+
+.medium .doing {
+  width: 0;
+  height: 0;
+  border-left: 1rem solid #caca1a;
+  border-top: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid transparent; }
+
+.low .doing {
+  width: 0;
+  height: 0;
+  border-left: 1rem solid #148614;
+  border-top: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid transparent; }
+
+/*# sourceMappingURL=onething.css.map */

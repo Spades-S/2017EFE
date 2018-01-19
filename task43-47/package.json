@@ -1,0 +1,26 @@
+{
+	"name": "task43-47",
+	"version": "1.0.0",
+	"description": "TODO-List",
+	"main": "index.js",
+	"scripts": {
+		"build": "webpack",
+		"dev": "webpack --watch & webpack-dev-server --open"
+	},
+	"keywords": [],
+	"author": "spadesge@gmail.com",
+	"license": "ISC",
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-preset-env": "^1.6.1",
+		"css-loader": "^0.28.9",
+		"node-sass": "^4.7.2",
+		"sass-loader": "^6.0.6",
+		"style-loader": "^0.19.1",
+		"webpack": "^3.10.0",
+		"webpack-dev-server": "^2.11.0"
+	},
+	"dependencies": {
+		"jquery": "^3.2.1"
+	}
+}
